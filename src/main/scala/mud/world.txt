@@ -1,0 +1,28 @@
+4
+Library
+@
+You are in a massive library. Shelves of books extend in spirals around you. Looking up, you see three floors looming over you, 
+twisting around a massive round window sky window whose edges are just turning pink with the dawn's first light. In the middle 
+of the room is a little reading nook. There are stairs leading upwards and a massive wooden door.
+@
+Library Second Floor, Outside Library
+@
+Book in Elvish, Chair, Lamp
+%
+Library Second Floor
+@
+The second floor of the library is much like the first. There are more shelves and more reading nooks. There is also a balcony 
+overlooking the first floor. If you lean out over the railing you can see the labrynthine shelves below and the skylight above.
+The stairs to the third floor are corded off with a sign written in a foreign language.
+@
+Library
+@
+Book in Elvish, Book in Elvish, Book in Elvish, Book in Elvish, Book in Elvish, Book in Elvish, Book in Elvish, Book in Elvish, 
+Book in Elvish, Book in Elvish, Chair, Chair, Chair, Chair, Chair, Chair, Lamp, Lamp, Lamp
+%
+Outside Library
+@
+*Insert discription from old English project*
+@
+@
+@

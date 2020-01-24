@@ -8,7 +8,7 @@ class Room(
 ) {
 
   def description(): String = desc;
-  def getExit(dir: Int): Option[Room] = ???
+  def getExit(dir: Int): Option[Room] = rooms(exits(dir))
   def getItem(itemName: String): Option[Item] = {
     items.find(_.name.toLowerCase == itemName.toLowerCase) match {
       case Some(item) =>
@@ -23,13 +23,27 @@ class Room(
 
 object Room {
   val rooms = readRooms()
-    def readRooms(): Array[Room] = {
-        val source = scala.io.Source.fromFile("world.txt")
-        val lines = source.getLines()
-        val r = Array.fill(lines.next.toInt)(readRoom(line))
-        source.close()
-        r
-    }
+  def readRooms(): Array[Room] = {
+    val source = scala.io.Source.fromFile("world.txt")
+    val lines = source.getLines()
+    val r = Array.fill(lines.next.toInt)(readRoom(lines))
+    source.close()
+    r
+  }
 
-    def readRoom(lines: Iterator[String]):Room = ???
+  def readRoom(lines: Iterator[String]): Room = {
+    var l = lines.next()
+    var text = ""
+    while (l != "%" && lines.hasNext) {
+      text += l
+      l = lines.next()
+    }
+    try {
+      val arr = text.split("@")
+      val name = arr(0)
+      val desc = arr(1)
+      val exits = arr(2).split(", ")
+      val items = arr(3).split(", ")
+    } catch { throw new Exception("Invalid spacing in room file") }
+  }
 }
