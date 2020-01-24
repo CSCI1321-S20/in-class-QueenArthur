@@ -41,8 +41,8 @@ object Room {
     try {
       val arr = text.split("@")
       val name = arr(0)
-      val desc = arr(1)
-      val exits = arr(2).split(", ")
+      val desc = arr(1).filter('\n')
+      val exits = arr(2).split(", ").map(_.toInt)
       val items = arr(3).split(", ")
     } catch { throw new Exception("Invalid spacing in room file") }
   }
