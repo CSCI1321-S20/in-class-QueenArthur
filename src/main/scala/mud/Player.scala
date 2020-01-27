@@ -33,12 +33,11 @@ class Player(private loc: Room, private items: Array[Items]) {
     }
   }
 
-  def help():Unit=println(""north, south, east, west, up, down - move in the desired direction.
+  def help():Unit=println("""north, south, east, west, up, down - move in the desired direction.
 look - reprints the description of the current room
 inv/inventory - list the contents of your inventory
 get item - get an item from the room and add it to your inventory
 drop item - drop an item from your inventory into the room.
 exit, quit - leave the game
-help - print the available commands and what they do"")
-  }
+help - print the available commands and what they do""")
 }
