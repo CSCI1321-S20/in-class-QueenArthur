@@ -8,7 +8,10 @@ class Room(
 ) {
 
   def description(): String = desc;
-  def getExit(dir: Int): Option[Room] = rooms(exits(dir))
+  def getExit(dir: Int): Option[Room] = exits(dir) match{
+    case Some(Int) => Some(???)
+  }
+  
   def getItem(itemName: String): Option[Item] = {
     items.find(_.name.toLowerCase == itemName.toLowerCase) match {
       case Some(item) =>

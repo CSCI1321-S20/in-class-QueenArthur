@@ -1,16 +1,17 @@
 package mud
 
-class Player(private loc: Room, private items: Array[Items]) {
+class Player(private var loc: Room, private var items: List[Item]) {
   def processCommand(command: String): Unit = {
-    command.head.toLowerCase match {
-      case north | n | south | s | east | e | west | w | up | u | down | d =>
+    val com = command.toLowerCase().split(" ")
+    com(1) match {
+      case "north" | "n" | "south" | "s" | "east" | "e" | "west" | "w" | "up" | "u" | "down" | "d" =>
         move(command)
-      case look => println(loc.description())
-      case inventory | inv => println(inventoryListing())
-      case get => addToInventory(room.getItem(command.tail.toLowerCase))
-      case drop => room.dropItem(getFromInventory(comand.tail.toLowerCase  ))
-      case exit | quit => ???
-      case help => help()
+      case "look" => println(loc.description())
+      case "inventory" | "inv" => println(inventoryListing())
+      case "get" => addToInventory(loc.getItem(com(2)))
+      case "drop" => loc.dropItem(getFromInventory(com(2)))
+      case "exit" | "quit" => Main.run = false
+      case "help" => help()
     }
   }
 
