@@ -22,7 +22,14 @@ Book in Elvish, Book in Elvish, Chair, Chair, Chair, Chair, Chair, Chair, Lamp, 
 %
 Outside Library
 @
-*Insert discription from old English project*
+Down the steps of the library a city stretches out before you. Golden spires reach toward the heavens as tree-like buildings weave 
+between.  Mesmerizing are the swaying of the branches among their stoic neighbors, a motion intensified by the steady rhythm of the 
+sea rising beyond the city, stretching infinitely into the horizon.  Above the city scape, you can just make out the sails of ships, 
+caught between the pull of the wind and the play of the waves.  Yet, despite the apparent chaos, people dance effortlessly between 
+the differing tempos.  Curriers clamber effortlessly from a swaying rope bridge to the spiraling stair of a golden tower. Children 
+leap from solid stairs to swinging ladders, headless of the depths o'er which they climb.
+The road that touches the stairs stretches out to the West, South and East.
 @
 @
+Road West, Road South, Road East
 @
