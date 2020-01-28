@@ -2,7 +2,11 @@ package mud
 
 class Player(private var loc: Room, private var items: List[Item]) {
   def processCommand(command: String): Unit = {
-    val com = command.toLowerCase().split(" ")
+    /*
+    input.stoutsWith
+    input.drop
+    */
+    val com = command.toLowerCase().split(" +", 2)
     com(1) match {
       case "north" | "n" | "south" | "s" | "east" | "e" | "west" | "w" | "up" | "u" | "down" | "d" =>
         move(command)
