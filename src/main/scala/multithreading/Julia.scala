@@ -1,6 +1,6 @@
 package multithreading
-
-import basics.Complex
+/*
+//import basics.Complex
 import scalafx.Includes._
 import scalafx.stage.Stage
 import scalafx.scene.Scene
@@ -75,3 +75,4 @@ class Julia(c: Complex) {
     cnt
   }
 }
+*/

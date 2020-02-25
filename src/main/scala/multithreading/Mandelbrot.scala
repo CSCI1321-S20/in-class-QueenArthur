@@ -1,5 +1,5 @@
 package multithreading
-
+/*
 import scalafx.Includes._
 import scalafx.application.JFXApp
 import scalafx.scene.Scene
@@ -80,3 +80,4 @@ object Mandelbrot extends JFXApp {
     cnt
   }
 }
+*/
